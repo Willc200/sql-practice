@@ -2,13 +2,13 @@
 -- https://sqlbolt.com/lesson/filtering_sorting_query_results
 
 -- Q1: List all directors of Pixar movies (alphabetically), without duplicates
-SELECT DISTINCT director FROM movies order by 1 asc;
+SELECT DISTINCT director FROM movies ORDER BY 1 ASC;
 
 -- Q2: List the last four Pixar movies released (ordered from most recent to least)
-SELECT * FROM movies order by year desc limit 4;
+SELECT * FROM movies ORDER BY year DESC LIMIT 4;
 
 -- Q3: List the first five Pixar movies sorted alphabetically
-SELECT * FROM movies order by title asc limit 5;
+SELECT * FROM movies ORDER BY title ASC LIMIT 5;
 
 -- Q4: List the next five Pixar movies sorted alphabetically
-SELECT * FROM movies order by title asc limit 5 offset 5;
+SELECT * FROM movies ORDER BY title ASC LIMIT 5 OFFSET 5;
